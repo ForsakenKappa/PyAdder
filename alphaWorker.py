@@ -13,7 +13,8 @@ if __name__ == "alphaWorker":
         def __init__(self):
             self._dataBase = pyxl.load_workbook("./resources/dataBase.xlsx")
         def populate(self, charset):
-            pass
+            for row in range(1, 9999):
+                DBrow = self._dataBase[row]
     
 
     pass
